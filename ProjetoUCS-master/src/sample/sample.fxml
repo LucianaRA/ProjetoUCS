@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="732.0" style="-fx-background-color: linear-gradient(to right top, #d1dcf8, #c4d2f3, #b8c7ef, #abbdea, #9eb3e5);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerObr">   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="725.0" style="-fx-background-color: linear-gradient(to right top, #d1dcf8, #d0d9ef, #cfd5e5, #cdd2dc, #ccced3);">
+        <menus>
+          <Menu mnemonicParsing="false" text="Editar">
+               <items>
+                  <MenuItem fx:id="menuUpdate" mnemonicParsing="false" onAction="#Editor" text="Editar" />
+                  <MenuItem fx:id="menuDel" mnemonicParsing="false" onAction="#deleterObra" text="Excluir" />
+               </items></Menu>
+          <Menu fx:id="menuHelp" mnemonicParsing="false" text="Ajuda" />
+        </menus>
+      </MenuBar>
+      <ListView fx:id="listView" layoutY="27.0" prefHeight="395.0" prefWidth="159.0" style="-fx-background-color: linear-gradient(to right top, #ffffff, #f2f2f4, #e6e6e9, #d9dade, #ccced3);" />
+      <Label layoutX="161.0" layoutY="27.0" text="Obra">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="61.0" prefHeight="17.0" prefWidth="49.0" text="Título" />
+      <Label layoutX="161.0" layoutY="95.0" prefHeight="17.0" prefWidth="49.0" text="ISBN" />
+      <Label layoutX="161.0" layoutY="128.0" prefHeight="17.0" prefWidth="86.0" text="Autor/Autores" />
+      <Label layoutX="161.0" layoutY="273.0" prefHeight="17.0" prefWidth="66.0" text="Autor">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="301.0" prefHeight="17.0" prefWidth="86.0" text="Nome*" />
+      <TextField fx:id="txtNome" layoutX="264.0" layoutY="57.0" prefHeight="25.0" prefWidth="346.0" />
+      <TextField fx:id="txtIsbn" layoutX="264.0" layoutY="91.0" prefHeight="25.0" prefWidth="346.0" />
+      <TextField fx:id="txtAut" layoutX="265.0" layoutY="124.0" prefHeight="25.0" prefWidth="346.0" />
+      <Label layoutX="161.0" layoutY="337.0" prefHeight="17.0" prefWidth="86.0" text="País de Origem*" />
+      <TextField fx:id="txtNomeAut" layoutX="264.0" layoutY="297.0" prefHeight="25.0" prefWidth="365.0" />
+      <TextField fx:id="txtPais" layoutX="264.0" layoutY="333.0" prefHeight="25.0" prefWidth="365.0" />
+      <Button fx:id="btnSave" layoutX="629.0" layoutY="217.0" mnemonicParsing="false" onAction="#saveObra" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: transparent;" text="Salvar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnCancel" layoutX="546.0" layoutY="217.0" mnemonicParsing="false" onAction="#cancelObra" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: tranaparent;" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="161.0" layoutY="161.0" prefHeight="17.0" prefWidth="107.0" text="Ano de Publicação" />
+      <TextField fx:id="txtPub" layoutX="264.0" layoutY="157.0" prefHeight="25.0" prefWidth="118.0" />
+      <Label layoutX="161.0" layoutY="192.0" prefHeight="17.0" prefWidth="107.0" text="Editora" />
+      <TextField fx:id="txtEdt" layoutX="264.0" layoutY="188.0" prefHeight="25.0" prefWidth="346.0" />
+      <Button fx:id="btnCancel2" layoutX="546.0" layoutY="369.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: transparent;" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnSave2" layoutX="629.0" layoutY="369.0" mnemonicParsing="false" onAction="#saveObra" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: transparent;" text="Salvar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
